@@ -19,16 +19,16 @@ module seven_segment_display_digits #( parameter NUMBER_OF_SEVEN_SEGMENT_LEDS = 
 	 */
 	 /*PARAMETER WITH DP DIACTIVATED BY DEFAULT*/
 	 parameter ZERO = 		8'b11000000;
-	 parameter ONE = 			8'b11111001;
-	 parameter TWO = 			8'b10100100;
+	 parameter ONE = 		8'b11111001;
+	 parameter TWO = 		8'b10100100;
 	 parameter THREE = 		8'b10110000;
 	 parameter FOUR = 		8'b10011001;
 	 parameter FIVE = 		8'b10010010;
-	 parameter SIX = 			8'b10000010;
+	 parameter SIX = 		8'b10000010;
 	 parameter SEVEN = 		8'b11111000;
 	 parameter EIGHT = 		8'b10000000;
 	 parameter NINE = 		8'b10010000;
-	 parameter DEFAULT = 	8'b11111111; //disable every segment
+	 parameter DEFAULT = 		8'b11111111; //disable every segment
 	 
 	 always@(bcd) begin
 		case(bcd)
